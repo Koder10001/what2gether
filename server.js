@@ -22,8 +22,8 @@ function handler(req,res) {
 
 
 
-server.listen(80,function(){
-  console.log("listening on port 80")
+server.listen(process.env.PORT || 80,function(){
+  console.log("listening on port "+(process.env.PORT || 80))
 });
 
 

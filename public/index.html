@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch together</title>
+    <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+    <div id="full" class="hide">
+        <div id="listContainer">
+            <div class="control">
+                <div class="inp"><input type="text" id="roomName" autocomplete="off" maxlength="20"/></div>
+                <div class="button" id="create">Create room</div>
+                <div class="button" id="find">Find room</div>
+            </div>
+            <div class="container col"></div>
+        </div>
+    </div>
+    <div class="control">
+        <div class="inp"><input type="text" id="url" autocomplete="off"/></div>
+        <div class="button" id="cur">Choose your room</div>
+        <div class="button" id="list">List room</div>
+        <div class="button" id="leave">Leave room</div>
+    </div>
+    <div class="container" id="field">
+        <div id="left">
+            <video id="vid" controls></video>
+        </div>
+        <div id="right">
+            <div id="chatField">
+                                                         
+            </div>
+            <div id="chatInput">
+                <input type="text" id="msg"/>
+            </div>
+        </div>
+    </div>
+    <script src="socket.io.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
